@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+	<TargetFramework>net5.0</TargetFramework>
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
     <VersionSuffix></VersionSuffix>
     <VersionPrefix>2.6.0</VersionPrefix>
@@ -26,7 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Refit" Version="5.0.23" />
+    <PackageReference Include="Refit" Version="6.1.15" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="6.1.15" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
 
